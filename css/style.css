@@ -1,0 +1,42 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.brick {
+    display: inline-block;
+    float: left;
+}
+
+.brick.white {
+    background-color: #eaeaea;
+}
+
+.brick.grey {
+    background-color: #a0a0a0;
+}
+
+.brick.light {
+    background-color: #d0d0d0;
+}
+
+.brick.dark {
+    background-color: #757575;
+}
