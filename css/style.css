@@ -7,22 +7,32 @@ html, body {
 .page {
     position: absolute;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 0;
+    
 }
 
 .wrapper {
-    width: 80%;
+    width: 60%;
+    text-align: left;
     height: 100%;
-    margin: 50px auto;
+    margin: auto;
     position: relative;
-}
-
-.clear {
-    clear: both;
+    display: inline-block;
 }
 
 .brick {
     display: inline-block;
     float: left;
+    width: 33%;
+    height: 33%;
+}
+.brick.horizontal {
+    width: 66%;
+}
+.brick.vertical {
+    height: 66%;
 }
 
 .brick.white {
@@ -39,4 +49,18 @@ html, body {
 
 .brick.dark {
     background-color: #757575;
+}
+
+@media all and (max-aspect-ratio: 4/3) {
+    .brick {
+        width: 100%;
+        height: 15%;
+    }
+    .brick.horizontal {
+        width: 100%;
+    }
+    .brick.vertical {
+        height: 30%;
+    }
+
 }
