@@ -35,32 +35,55 @@ html, body {
     height: 66%;
 }
 
-.brick.white {
+.brick.five {
     background-color: #eaeaea;
 }
 
-.brick.grey {
-    background-color: #a0a0a0;
-}
-
-.brick.light {
+.brick.one, .brick.six {
     background-color: #d0d0d0;
 }
 
-.brick.dark {
+.brick.four {
+    background-color: #a0a0a0;
+}
+
+.brick.two {
     background-color: #757575;
 }
 
-@media all and (max-aspect-ratio: 4/3) {
-    .brick {
+.brick.three {
+    background-color: #858585;
+}
+
+@media all and (max-aspect-ratio: 1/1) and (min-aspect-ratio: 2/3) {
+    .brick.one, .brick.six {
         width: 100%;
-        height: 15%;
+        height: 23%;
     }
-    .brick.horizontal {
+    .brick.three, .brick.four, .brick.five {
+        width: 40%;
+        height: 18%;
+    }
+    .brick.two {
+        width: 60%;
+        height: 54%;
+    }
+
+}
+
+@media all and (max-aspect-ratio: 2/3) {
+    .brick.horizontal, .brick.vertical, .brick {
         width: 100%;
+        height: 13%;
     }
-    .brick.vertical {
-        height: 30%;
+    .brick.three {
+        height: 50%;
+    }
+    .brick.five {
+        height: 24%;
+    }
+    .brick.nosmart {
+        display: none;
     }
 
 }
